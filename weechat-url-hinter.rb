@@ -128,7 +128,7 @@ end
 # open specified url
 #
 def open_url(url)
-  Weechat.hook_process("open #{url}", 10000, '', '')
+  Weechat.hook_process("xdg-open #{url}", 10000, '', '')
 end
 
 #----------------------------
@@ -174,7 +174,7 @@ class Hint
   end
 
   def open_all_reserved_url
-    Weechat.hook_process("open #{@open_target_urls.join(' ')}", 10000, '', '') if @open_target_urls.any?
+    Weechat.hook_process("xdg-open #{@open_target_urls.join(' ')}", 10000, '', '') if @open_target_urls.any?
   end
 
   def has_key?(key)
