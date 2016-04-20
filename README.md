@@ -1,8 +1,9 @@
-# Weechat-url-hinter
+# Weechat-url-hinter-xdg
 
 Weechat url hinter is a plugin that open a url on weehcat buffer without touching mouse.
 
-This plugin is available in only Mac OSX.
+This fork of the plugin uses `xdg-open` so it can be used in GNU/Linux
+systems.
 
 # Requirement
 
